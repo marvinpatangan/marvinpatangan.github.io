@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jan Marvin Patangan Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4ddbd558dc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+<!-- ------------------Header------------------ -->
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="assets/logo.png" class="logo" alt="logoImg">
+            <ul id="sidemenu">
+                <li><a href="#header"> Home </a></li>
+                <li><a href="#about"> About </a></li>
+                <li><a href="#services"> Services </a></li>
+                <li><a href="#portfolio"> Portfolio </a></li>
+                <li><a href="#contact"> Contact </a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Computer Engineering Graduate</p>
+            <h1>Hi, I'm <span>Jan Marvin Patangan</span></h1>
+        </div>
+    </div>
+</div>
+
+<!-- ------------------About------------------ -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="assets/me.jpg" alt="userImg">
+            </div>        
+            <div class="about-col-2">
+                <h1 class="subtitle">About me</h1>
+                <p align="justify">Computer Engineering graduate with software specialization with expertise in Python, Java, JavaScript, C#, C++, HTML, CSS, and PHP. Seeking a Software Developer role to apply coding skills and creative problem-solving. Eager to contribute to a dynamic team at your company and stay updated on emerging technologies for continuous innovation.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>Python, Java, JavaScript, C#, C++, HTML, CSS, and PHP</li>
+                        <li><span>Web Development</span><br>ReactJS and NextJS</li>
+                        <li><span>Back-end Development</span><br>Google Firebase and SQLite</li>
+                        <li><span>Version Control Systems</span><br>Github and Bitbucket</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Xurpas Inc.</span><br>Back-end Development</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul class="timeline-item">
+                        <li><span>Polytechnic University of the Philippines</span><br>Bachelor of Science in Computer Engineering | President's Lister</li>
+                        <li><span>San Jose Academy</span><br>Senior Highschool | STEM Strand | With High Honors</li>
+                        <li><span>San Jose Academy</span><br>Junior Highschool | National Robotics Champion (2014)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------------------Services------------------ -->
+<div id="services">
+    <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web<br>Development</h2>
+                <p></p>
+            </div>
+            <div>
+                <i class="fa-brands fa-android"></i>
+                <h2>Android App Development</h2>
+                <p></p>
+            </div>
+            <div>
+                <i class="fa-solid fa-gamepad"></i>
+                <h2>Android Game Development</h2>
+                <p></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------------------Portfolio------------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">Projects that I've worked on.</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="assets/aqms.png" alt="workImg">
+                <div class="layer">
+                    <h3>Air Quality Tester and Monitoring System Dashboard</h3>
+                    <p>AQMS Dashboard is a web application developed using MaterialUI and ReactJS. This was developed for my thesis project called Air Quality Tester and Monitoring System. This web application displayed various charts that reflect the air quality values that are currently present in the area where the project was deployed.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="assets/athena.png" alt="workImg">
+                <div class="layer">
+                    <h3>Athena: Study Application</h3>
+                    <p>Athena is a study application developed using Android Studio and Java. This application is designed to help college students be more productive and aware of their current status as students throughout their college journey.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="assets/tyangami.png" alt="workImg">
+                <div class="layer">
+                    <h3>Tyangami: PUP Students Vaccine Tracker</h3>
+                    <p>Tyangami is a web application used for tracking the vaccination records of students at the Polytechnic University of the Philippines. This was developed for a school project with the idea of being safe in the midst of the pandemic.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="assets/upsurge.png" alt="workImg">
+                <div class="layer">
+                    <h3>UPSURGE!</h3>
+                    <p>UPSURGE! is a 2D platformer game that is developed using Unity 3D and C#. This is a single-level game designed and developed for a school project.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="assets/rezaku.png" alt="workImg">
+                <div class="layer">
+                    <h3>Rezaku: Reciple Application</h3>
+                    <p>Rezaku is an Android application that displays different kinds of dishes with their recipes along with instructions on how to cook them.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------------------Contact------------------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i> marvn.patangan@gmail.com</p>
+                <p> <i class="fa-solid fa-square-phone"></i> 09617600523</p>
+                <div class="social-icons">
+                    <a href="https://github.com/marvinpatangan"><i class="fa-brands fa-square-github"></i></a>
+                    <a href="https://www.linkedin.com/in/janmarvinpatangan/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="assets/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &#169; marvin.</p>
+    </div>
+</div>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
