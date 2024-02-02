@@ -47,10 +47,6 @@
     text-align: center;
 }
 
-.section_title {
-    padding-top: 2rem;
-}
-
 .about_button {
     margin-left: 5rem;
 }
@@ -103,6 +99,10 @@
 
     .about_description {
         padding: 0;
+    }
+
+    .about_container {
+        padding-bottom: 0;
     }
 }
 

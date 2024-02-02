@@ -12,17 +12,20 @@
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
     color: var(--title-color);
-    margin: 0 var(--mb-1);
+    margin: 0 3.5rem;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .qualification_button:hover {
     color: var(--title-color-dark);
+    transform: translateY(-0.25rem);
 }
 
 .qualification_icon {
     font-size: 1.8rem;
     margin-right: var(--mb-0-25);
+    margin-left: var(--mb-0-25);
 }
 
 .qualification_active {
@@ -50,7 +53,7 @@
 }
 
 .qualification_title {
-    font-size: var(--normal-font-size);
+    font-size: var(--small-font-size);
     font-weight: var(--font-medium);
     margin-bottom: 0.5rem;
 }

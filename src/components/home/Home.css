@@ -185,7 +185,11 @@
   }
   
   /* For small devices */
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 390px) {
+    .home_content {
+        padding-bottom: 0;
+    }
+
     .home_img {
         width: 180px;
         height: 180px;

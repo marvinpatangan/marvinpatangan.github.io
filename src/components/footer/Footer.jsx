@@ -20,12 +20,12 @@ const Footer = () => {
             </ul>
 
             <div className="footer_social">
-                <a href="" className="footer_social-link" target='_blank'><i class="uil uil-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/janmarvinpatangan/" className="footer_social-link" target='_blank'><i class="uil uil-linkedin"></i></a>
                 <a href="" className="footer_social-link" target='_blank'><i class="uil uil-instagram"></i></a>
-                <a href="" className="footer_social-link" target='_blank'><i class="uil uil-github"></i></a>
+                <a href="https://github.com/marvinpatangan" className="footer_social-link" target='_blank'><i class="uil uil-github"></i></a>
             </div>
 
-            <span className="footer_copy">&#169; JAN MARVIN A. PATANGAN</span>
+            <span className="footer_copy">Copyright &#169; Jan Marvin A. Patangan. All Rights Reserved</span>
         </div>
     </footer>
   )

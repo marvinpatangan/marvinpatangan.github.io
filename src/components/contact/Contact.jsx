@@ -7,22 +7,23 @@ const Contact = () => {
     const form = useRef();
 
     const sendEmail = (e) => {
-    e.preventDefault();
 
-    emailjs.sendForm('service_t00x6j9', 'template_ztoksjk', form.current, 'Jde3CcAdUOwVTysNL')
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-        });
+        e.preventDefault();
 
-        e.target.reset();
+        emailjs.sendForm('service_t00x6j9', 'template_ztoksjk', form.current, 'Jde3CcAdUOwVTysNL')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+
+            e.target.reset();
     };
 
   return (
     <section className="contact section" id="contact">
-        <h2 className="section_title">Contact Me</h2>
         <span className="section_subtitle">Get in touch</span>
+        <h2 className="section_title">Contact Me</h2>
 
         <div className="contact_container container grid">
             <div className="contact_content">

@@ -10,8 +10,9 @@ const Qualifications = () => {
 
   return (
     <section className="qualification section">
-      <h2 className="section_title">Qualifications</h2>\
-      <span className="section_subtitle">My Personal Journey</span>
+
+      <span className="section_subtitle">My journey</span>
+      <h2 className="section_title">Qualifications</h2>
 
       <div className="qualification_container container">
         <div className="qualification_tabs">
@@ -20,14 +21,16 @@ const Qualifications = () => {
             <i className="uil uil-graduation-cap qualification_icon"></i> Education
           </div>
           <div className={toggleState === 2 ? "qualification_button qualification_active button--flex" : "qualification_button button--flex"} onClick={() => toggleTab(2)}>
-            <i className="uil uil-briefcase-alt qualification_icon"></i> Experience
+            Experience <i className="uil uil-briefcase-alt qualification_icon"></i>
           </div>
 
         </div>
 
         <div className="qualification_sections">
+
           {/* EDUCATION */}
-          <div className={toggleState === 1 ? "qualification_content qualification_content-active" : "qualification_content"}>      
+          <div className={toggleState === 1 ? "qualification_content qualification_content-active" : "qualification_content"}>   
+
             {/* PUP */}
             <div className="qualification_data">
               <div>
@@ -42,6 +45,7 @@ const Qualifications = () => {
                 <span className="qualification_line"></span>
               </div>
             </div>      
+
             {/* SAN JOSE - SENIOR HIGH*/}
             <div className="qualification_data">
               <div></div>
@@ -58,6 +62,7 @@ const Qualifications = () => {
               </div>
 
             </div>
+
             {/* SAN JOSE - JUNIOR HIGH */}
             <div className="qualification_data">
 
@@ -74,13 +79,13 @@ const Qualifications = () => {
                 <span className="qualification_line"></span>
               </div>
             </div>
+
             {/* ADVENTIST */}
-            <div className="qualification_data">
+            <div className="qualification_data qualification_data-last">
               <div></div>
 
               <div>
                 <span className="qualification_rounder"></span>
-                <span className="qualification_line"></span>
               </div>
 
               <div>
@@ -92,10 +97,12 @@ const Qualifications = () => {
               </div>
 
             </div>
+            
           </div>
 
           {/* EXPERIENCE */}
           <div className={toggleState === 2 ? "qualification_content qualification_content-active" : "qualification_content"}>
+
             {/* XURPAS */}
             <div className="qualification_data">
               <div>
@@ -107,9 +114,10 @@ const Qualifications = () => {
               </div>
               <div>
                 <span className="qualification_rounder"></span>
-                <span className="qualification_line"></span>
+                {/* <span className="qualification_line"></span> */}
               </div>
             </div>
+
           </div>
         </div>
       </div>

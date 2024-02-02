@@ -119,12 +119,13 @@ img {
 .section_title {
   font-size: var(--h1-font-size);
   color: var(--title-color);
+  margin-bottom: 4rem;
 }
 
 .section_subtitle {
   display: block;
   font-size: var(--small-font-size);
-  margin-bottom: 4rem;
+  margin-top: 2rem;
 }
 
 .section_title,
@@ -134,7 +135,7 @@ img {
 
 /*========================= LAYOUT =========================*/
 .container {
-  max-width: 968px;
+  max-width: 970px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -195,16 +196,21 @@ img {
     padding: 2rem 0 4rem;
   }
 
-  .section_subtitle {
+  .section_title {
     margin-bottom: var(--mb-3);
+  }
+
+  .section_subtitle {
+    margin-top: 1rem;
   }
 }
 
 @media screen and (max-width: 576px) {
+
 }
 
 /* For small devices */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 390px) {
   :root {
     --big-font-size: 2.25rem;
   }
